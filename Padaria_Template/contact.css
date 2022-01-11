@@ -1,0 +1,100 @@
+body{
+    font-family: 'Roboto Slab', serif;
+}
+
+.container{
+    width: 100%;
+    height: 85vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    background-image: url(./images/back_contact.jpg);
+    background-size: cover; 
+}
+
+
+
+.image-table-center{
+    background-image: url(./images/WhatsApp_Image.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+.table-right{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 5fr 1fr 1fr;
+    grid-gap: 10px;
+    width: 75%;
+    height: 75%;
+    align-self:center;
+    justify-self: center;
+
+    background-color: rgba(46, 46, 46, 0.89);
+    color: white;
+
+    border-width: 5px;
+    border-style: solid;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+
+}
+
+input, textarea{
+    font-family: 'Roboto Slab', serif;
+    cursor:text;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+input[type=button]{
+    cursor:pointer;
+}
+
+/*whatsapp*/
+
+.appear_image{
+    position: absolute;
+    z-index:1;
+    top: 110px;
+    right: 300px;
+}
+
+#whatsapp_image_link{
+    height: 80px;
+    width: 80px;
+    
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-image: url(./images/WhatsApp_Image.png);
+    background-size: cover;
+    transition-duration: 0.2s;
+
+}
+
+#whatsapp_image_link:hover{
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+
+@media  screen and (max-width: 900px) {
+
+
+.container{
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.table-right{
+    margin-top: 35%;
+}
+}

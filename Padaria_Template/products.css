@@ -1,0 +1,135 @@
+body{
+    background-color: rgb(175, 149, 113);
+}
+
+.appear_image{
+    position: absolute;
+    z-index:1;
+}
+
+#whatsapp_image_link{
+    height: 80px;
+    width: 80px;
+    
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-image: url(./images/WhatsApp_Image.png);
+    background-size: cover;
+    transition-duration: 0.2s;
+
+}
+
+#whatsapp_image_link:hover{
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+
+.space-img{
+    width: 100%;
+    height: 300px;
+    background-image: url(./images/back-korean.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 15%;
+    
+    font-size: 50px;
+    font-family: 'Roboto Slab', serif;
+    text-shadow: -4px 3px 0px #7A7A7A;
+}
+
+.line-high{
+    background-color: #ffffffab;
+    width: 50%;
+    margin:auto;
+    height: 4px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+
+.container{
+    width: 100%;
+}
+
+.min-container{
+    font-family: 'Roboto Slab', serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    width: 100%;
+    max-height: fit-content;
+    column-gap: 0px;
+}
+
+.min-cont-left{
+    
+    position: relative;
+
+    width: 75%;
+    color: white;
+    
+}
+
+.min-cont-right{
+    position: relative;
+    width: 75%;
+    color: white;
+
+}
+
+.cont-prod{
+    background-color: rgb(32, 32, 32);
+    height: fit-content;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor:pointer;
+    
+    border-radius: 5px;
+    border-color: rgb(17, 17, 17);
+    border-style: solid;
+    border-width: 2px;
+}
+
+.cont-prod:hover{
+    background-color: rgb(15, 15, 15);
+}
+
+
+.prod{
+    display: none;
+    padding: 10px;
+}
+
+.space{
+    width: 100%;
+}
+
+.show{
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+}
+
+
+@media  screen and (max-width: 900px) {
+
+    .space-img{
+        
+        align-items: flex-end;
+
+}
+    .space-img span{
+        margin-bottom: 50px;
+    };
+
+}
+

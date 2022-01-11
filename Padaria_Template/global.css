@@ -1,0 +1,273 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    cursor:default;
+}
+
+
+
+body{
+    background-color: #482917;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    color: #fff9f1;
+}
+
+
+
+/*All header--------------------------------*/
+
+header{
+    width: 100%;
+    height: fit-content;
+    background-color: #482917;
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 150px 1fr;
+    grid-template-rows: 1fr;
+
+    justify-items: center;
+    align-content: space-between;
+}
+
+#logo{
+    height: 150px;
+    position: absolute;
+    top:0px;
+    z-index:1;  /*Coloca o elemento a frente ou atrás :)*/
+}
+
+/*Elemento pertencente ao main, porém para organizá-lo, coloquei no header*/
+#bordao-h1{
+    position: absolute;
+    top: 200px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Lobster', cursive;
+    width: 25vw;
+    color: #fdebd2;
+    z-index:1; 
+}
+
+#ul-left{
+    font-size: 35px;
+    font-family: 'Fasthand', cursive;
+    color: #fff9f1;
+
+    position: relative;
+
+    display: flex;
+    align-self: center;
+}
+
+.li-left{
+    
+    transition-duration: 0.2s;
+    margin-left: 50px;
+    
+
+}
+
+#ul-right{
+    font-size: 35px;
+    font-family: 'Fasthand', cursive;
+    color: #fff9f1;
+
+    position: relative;
+    
+    display: flex;
+    align-self: center;
+
+    
+}
+
+.li-right{
+    
+    transition-duration: 0.2s;
+    margin-right: 50px;
+
+}
+
+li:hover{
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+.footer{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color: rgb(0, 0, 0);
+    background-color: rgba(31, 31, 31, 0.397);
+    
+    padding: 20px;
+    width: 100%;
+    
+    font-family: 'Roboto Slab', serif;
+
+}
+
+/*main--------------------------------*/
+.container-contact-footer{
+    display: flex;
+  
+}
+.contact-footer{
+    display: flex;
+    justify-content:flex-start ;
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    margin-top:20px;
+    margin-bottom: 20px;
+
+    gap: 50px;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+
+.contact-footer span{
+    font-size: 30px;
+}
+
+.social-ico{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+#social1{
+    background-image: url(./images/icos/whatsapp.png);
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+#social1:hover{
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+}
+
+#social2{
+    background-image: url(./images/icos/facebook.png);
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+
+}
+
+#social2:hover{
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+}
+
+#social3{
+    background-image: url(./images/icos/instagram.png);
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+#social3:hover{
+    transform: scale(1.1);
+    transition-duration: 0.2s;}
+
+/*Media menor do que 900px*/
+
+
+#boxMajor{
+    display: none;
+    position:fixed;
+    right: 7%;
+    top: 10vh;
+    z-index:1; 
+    font-size: 20px;   
+}
+
+#boxMajorProd{
+    display: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+@media  screen and (max-width: 900px) {
+    
+#boxMajor{   
+    display: grid;
+    z-index: 20;
+}
+
+#boxMajorProd{
+    display: none;
+    background-color: rgba(27, 26, 26, 0.966);
+    font-family: 'Roboto Slab', serif;
+
+    
+}
+
+#boxMajorProd a{
+    color: rgb(255, 255, 255);
+    padding:5px;
+}
+
+#boxMajorProd a:hover{
+    background-color: rgba(2, 2, 2, 0.479);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#ul-left, #ul-right{
+    display: none;
+}
+
+#letterDesign{
+    justify-self: flex-end;
+    align-self: center;
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+    background-image: url(./images/cardapio_minnor.png);
+    color: rgb(54, 54, 54);
+    cursor:pointer;
+}
+
+#letterDesign:target{
+    background-color: aqua;
+}
+
+/**/
+
+#bordao-h1{
+    display: none;
+    width: 25vw;
+    top:40px;
+    left: 20px;
+}
+
+#logo{
+    top:20px;
+    height: 15vw;
+}
+
+}

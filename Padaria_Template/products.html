@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="global.css">
+    <link rel="stylesheet" type="text/css" href="products.css">
+
+    
+    <!--Font ul-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&display=swap" rel="stylesheet">
+
+    <!--Font H1-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="./images/icos/favicon.ico">
+
+</head>
+<body>
+
+        <div class="appear_image">
+            <a href="https://wa.me/5521988902499"><div id="whatsapp_image_link" ></div></a>
+        </div>
+
+        <div id="boxMajor" onclick="controlHid()"><span id="letterDesign"></span>
+
+            <div id="boxMajorProd">
+                <a href="./home.html">Início</a>
+                <a href="./history.html">Nossa Historia</a>
+                <a href="./products.html">Produtos</a>
+                <a href="./contact.html">Contato</a>
+            </div>
+        </div>
+
+        <header>
+            <ul id="ul-left">
+                <a href="./home.html"><li class="li-left">Início</li></a>
+                <a href="./history.html"><li class="li-left">Nossa Historia</li></a>
+            </ul>
+            <div></div>
+            
+            <img id="logo" src="./images/logo_header.png">
+            
+            <ul id="ul-right"> 
+                <a href="./products.html"><li class="li-right">Produtos</li></a>
+                <a href="./contact.html"><li class="li-right">Contato</li></a>
+            </ul>
+
+        </header>
+
+        <main>
+            
+            <div class="container">
+
+                <div class="space-img"><span>Produtos</span></div>
+                
+                <div class="line-high"></div>
+
+                <!--start grid-->
+                <div class="min-container">
+
+                   
+
+                    <div class="min-cont-left"> <!--2-->
+                    
+                        <div class="cont-prod" id="cont0" onclick="listProd0()"> Promoção <span class="show" id="show0">+</span>
+                            <span class="prod">produto1</span>
+                            <span class="prod">produto2</span>
+                            <span class="prod">produto3</span>
+                        </div>
+
+                        <div class="cont-prod" id="cont1" onclick="listProd1()"> Laticinios <span class="show" id="show1">+</span>
+                            <span class="prod">produto1</span>
+                            <span class="prod">produto2</span>
+                            <span class="prod">produto3</span>
+                        </div>
+
+                        <div class="cont-prod" id="cont2" onclick="listProd2()"> Churrasco <span class="show" id="show2">+</span>
+                            <span class="prod">produto1</span>
+                            <span class="prod">produto2</span>
+                            <span class="prod">produto3</span>
+                        </div>
+
+                        <div class="cont-prod" id="cont3" onclick="listProd3()"> Utensílios <span class="show" id="show3">+</span>
+                            <span class="prod">produto1</span>
+                            <span class="prod">produto2</span>
+                            <span class="prod">produto3</span>
+                        </div>
+
+                    </div>
+
+                    <div class="min-cont-right"> <!--3-->
+
+                        <div class="cont-prod" id="cont4" onclick="listProd4()"> Destaque da casa <span class="show" id="show4">+</span>
+                            <span class="prod">produto1</span>
+                            <span class="prod">produto2</span>
+                            <span class="prod">produto3</span>
+                        </div>
+
+                        <div class="cont-prod" id="cont5" onclick="listProd5()"> Padaria <span class="show" id="show5">+</span>
+                            <span class="prod">produto1</span>
+                            <span class="prod">produto2</span>
+                            <span class="prod">produto3</span>
+                        </div>
+
+                        <div class="cont-prod" id="cont6" onclick="listProd6()"> Bebidas não alcoolicas <span class="show" id="show6">+</span>
+                            <span class="prod">produto1</span>
+                            <span class="prod">produto2</span>
+                            <span class="prod">produto3</span>
+                        </div>
+
+                        <div class="cont-prod" id="cont7" onclick="listProd7()"> Bebidas alcoolicas <span class="show" id="show7">+</span>
+                            <span class="prod">produto1</span>
+                            <span class="prod">produto2</span>
+                            <span class="prod">produto3</span>
+                        </div>
+                        
+                        
+                    </div>
+                  
+
+               <!--end grid-->
+               
+            </div>
+            
+        </div>
+        </main>
+
+        <div class="line-high"></div>
+
+        <div class="space"></div>
+
+        <div class="contact-footer">
+            <img style="width: 200px;" src="./images/logo_header.png">
+            <div><span>Nosso endereço:</span> <br><br> Rua XXXX numero XXX <br> Rio de janeiro, Brasil</div>
+            <div><span>Nosso numero:</span> <br><br> (21)98578-8554 <br> (21)32546758</div>
+            <div class="social-media">
+                <span>Redes sociais:</span><br><br>
+                    <div class="social-ico">
+                        <div class="social-ico" id="social1"></div>
+                        <div class="social-ico" id="social2"></div>
+                        <div class="social-ico" id="social3"></div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="footer">Todos os direitos reservados ####### - 2021 - Produzido por: Pedro Alvarenga</div>
+        <script src="products.js"></script>
+        <script src="./global.js"></script>
+
+</body>
+</html>

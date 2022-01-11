@@ -1,0 +1,88 @@
+.appear_image{
+    position: absolute;
+    z-index:1;
+}
+
+#whatsapp_image_link{
+    height: 80px;
+    width: 80px;
+    
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-image: url(./images/WhatsApp_Image.png);
+    background-size: cover;
+    transition-duration: 0.2s;
+
+}
+
+#whatsapp_image_link:hover{
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+body{
+    background-color: #482917;
+}
+
+
+main{
+    background-image: url(./images/preview.jpg);
+    height: fit-content;
+    background-size: cover;
+}
+
+.container{
+    height: fit-content;
+    font-family: 'Roboto Slab', serif;
+    font-size: 10px;
+
+    display: grid;
+    
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: center;
+    
+}
+
+.space{
+    height: 30vh;
+}
+
+.container h1{
+    display: flex;
+
+    height: fit-content;
+    padding: 15px;
+
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 20px;
+
+    background-color: rgb(252, 252, 252);
+}
+
+.container h2{
+    display: flex;
+    justify-self: center;
+    margin:20px;
+    color: white;
+    align-items: center;
+
+    object-fit: cover;
+   
+    height: fit-content;
+    background-color: #482917;
+    border-radius: 25px;
+    padding: 5px;
+}
+
+.detail{
+    width: 3vw;
+    position: relative;
+}
+
+#det1{
+    transform: rotateZ(180deg);
+}
